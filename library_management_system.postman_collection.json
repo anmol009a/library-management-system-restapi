@@ -24,7 +24,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"john@example.com\"\r\n}",
+							"raw": "{\r\n    \"email\": \"johndoe@example.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -36,26 +36,7 @@
 					"response": []
 				},
 				{
-					"name": "Logout",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
-						"url": "{{base_url}}/logout"
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Members",
-			"item": [
-				{
-					"name": "Create Member",
+					"name": "Register",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -66,7 +47,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"John Doe 3\",\r\n    \"email\": \"john3@example.com\"\r\n}",
+							"raw": "{\r\n    \"name\": \"John Doe\",\r\n    \"email\": \"johndoe@example.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -76,7 +57,12 @@
 						"url": "{{base_url}}/auth/register"
 					},
 					"response": []
-				},
+				}
+			]
+		},
+		{
+			"name": "Members",
+			"item": [
 				{
 					"name": "Get Member",
 					"request": {
@@ -176,12 +162,6 @@
 				{
 					"name": "Get Book",
 					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzYyNjE0NTUsIm1lbWJlcl9pZCI6M30.nED_RQ7-I4479EGPy3TWgyFZT9oDBv8wIhrMbW_uik8"
-							}
-						},
 						"method": "GET",
 						"header": [
 							{
@@ -270,38 +250,7 @@
 								}
 							}
 						},
-						"url": "{{base_url}}/books/title/new book"
-					},
-					"response": []
-				},
-				{
-					"name": "Paginated Books",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}"
-							}
-						],
-						"url": {
-							"raw": "{{base_url}}.books.paginated?page={{page}}&per_page={{per_page}}",
-							"host": [
-								"{{base_url}}",
-								"books",
-								"paginated"
-							],
-							"query": [
-								{
-									"key": "page",
-									"value": "{{page}}"
-								},
-								{
-									"key": "per_page",
-									"value": "{{per_page}}"
-								}
-							]
-						}
+						"url": "{{base_url}}/books/title/{{book_title}}"
 					},
 					"response": []
 				}
@@ -341,7 +290,12 @@
 		},
 		{
 			"key": "token",
-			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzYzNTE4NTksIm1lbWJlcl9pZCI6M30.6J-f2mvHJTmfUQOO_8TLxkp-upMEnCUn_aQM3IEqAWc",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzY1Mjg5MDcsIm1lbWJlcl9pZCI6MX0.oE1GXvxeLWIkaGAwp9S7dcohTo_xssgh74gnZCt9sO4",
+			"type": "string"
+		},
+		{
+			"key": "book_title",
+			"value": "New Book",
 			"type": "string"
 		}
 	]
