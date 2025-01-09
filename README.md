@@ -50,8 +50,8 @@ This project is a Flask-based REST API for managing books and members in a libra
 
 1. **Clone the Repository**:
    ```bash
-   git clone <repository_url>
-   cd <repository_folder>
+   git clone https://github.com/anmol009a/library-management-system-restapi.git
+   cd library-management-system-restapi
    ```
 
 2. **Create Virtual Environment**:
