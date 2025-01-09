@@ -9,19 +9,8 @@ This project is a Flask-based REST API for managing books and members in a libra
 - [Setup and Running the Project](#setup-and-running-the-project)
   - [Prerequisites](#prerequisites)
   - [Steps to Run](#steps-to-run)
-- [API Endpoints](#api-endpoints)
-  - [Authentication](#authentication)
-  - [Members](#members)
-  - [Books](#books)
-- [Design Choices](#design-choices)
-- [Assumptions and Limitations](#assumptions-and-limitations)
-- [Testing](#testing)
-  - [Running Automated Tests](#running-automated-tests)
 
-- [Features](#features)
-- [Setup and Running the Project](#setup-and-running-the-project)
-  - [Prerequisites](#prerequisites)
-  - [Steps to Run](#steps-to-run)
+- [Live App](#live-app)
 - [API Endpoints](#api-endpoints)
   - [Authentication](#authentication)
   - [Members](#members)
@@ -107,6 +96,9 @@ This project is a Flask-based REST API for managing books and members in a libra
    - Refer to the endpoint documentation below for details.
 
 ---
+
+## Live App
+URL: `https://library-management-system-api-qxgz.onrender.com/`
 
 ## API Endpoints
 
