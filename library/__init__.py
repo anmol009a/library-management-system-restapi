@@ -36,9 +36,6 @@ def create_app(test_config=None):
 
     from . import db, auth, book, member
 
-    # initialize database
-    db.init_db_command()
-
     # initialize app
     db.init_app(app)
 
