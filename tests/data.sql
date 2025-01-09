@@ -1,0 +1,2 @@
+INSERT INTO members (name, email) VALUES ('John Doe', 'john@example.com'), ('Jane Doe', 'jane@example.com');
+INSERT INTO books (title, author, year) VALUES ('The Great Gatsby', 'F. Scott Fitzgerald', 1925), ('Test-Driven Development by Example', 'Kent Beck', 2003);

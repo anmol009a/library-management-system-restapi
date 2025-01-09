@@ -1,0 +1,27 @@
+# venv
+.venv/
+
+# vscode
+.vscode/
+
+# development
+TODO
+
+# python
+*.pyc
+__pycache__/
+
+# app
+instance/
+
+# pytest
+.pytest_cache/
+
+# coverage
+.coverage
+htmlcov/
+
+# build
+dist/
+build/
+*.egg-info/
